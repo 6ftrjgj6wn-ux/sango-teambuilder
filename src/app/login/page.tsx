@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { supabase } from '../../../lib/supabase'
+import { supabase } from '@/lib/supabase'   // ← 正確 alias，已確認可用
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
